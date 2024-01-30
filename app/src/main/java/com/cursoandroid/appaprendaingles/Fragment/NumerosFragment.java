@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.cursoandroid.appaprendaingles.R;
 
@@ -17,7 +18,7 @@ import com.cursoandroid.appaprendaingles.R;
  * A simple {@link Fragment} subclass.
  */
 public class NumerosFragment extends Fragment implements View.OnClickListener {
-    private ImageButton buttonUm, buttonDois, buttonTres, buttonQuatro, buttonCinco, buttonSeis;
+    private ImageView buttonUm, buttonDois, buttonTres, buttonQuatro, buttonCinco, buttonSeis;
     private MediaPlayer mediaPlayer;
 
 
@@ -51,8 +52,8 @@ public class NumerosFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View v) {
-        switch (getView().getId()){
+    public void onClick(View view) {
+        switch ( view.getId() ){
             case R.id.buttonUm :
                 mediaPlayer = MediaPlayer.create(getActivity(),R.raw.one);
                 tocarSom();

@@ -55,8 +55,8 @@ public class BichosFragment extends Fragment implements View.OnClickListener {
 
     // metodo de onclick definido de forma global dentro da classe
     @Override
-    public void onClick(View v) {
-        switch (getView().getId()){
+    public void onClick(View view) {
+        switch ( view.getId() ){
             case R.id.buttonCao :
                 mediaPlayer = MediaPlayer.create(getActivity(),R.raw.dog);
                 tocarSom();
@@ -85,14 +85,16 @@ public class BichosFragment extends Fragment implements View.OnClickListener {
     }
 
     public void tocarSom(){
-        if (mediaPlayer != null){
+        if ( mediaPlayer != null ){
             mediaPlayer.start();
+
             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
-                public void onCompletion(MediaPlayer mp) {
+                public void onCompletion(MediaPlayer mediaPlayer) {
                     mediaPlayer.release();
                 }
             });
+
         }
     }
 

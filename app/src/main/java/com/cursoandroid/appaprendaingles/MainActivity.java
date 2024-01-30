@@ -23,14 +23,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Configuracoes action bar
+        getSupportActionBar().setElevation(0);
+        getSupportActionBar().setTitle("Aprenda Inglês");
+
         smartTabLayout = findViewById(R.id.viewpagertab);
         viewPager = findViewById(R.id.viewpager);
 
-        // remove a marcação da action bar
-        getSupportActionBar().setElevation(0);
-
         // configurar o adapter para as abas
-        FragmentPagerAdapter adapter = new FragmentPagerItemAdapter(
+        FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), // recupera o fragment manager
                 FragmentPagerItems.with(this)
                         .add("Bichos", BichosFragment.class)
