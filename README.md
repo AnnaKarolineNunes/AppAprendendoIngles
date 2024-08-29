@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Neste projeto, foi possivel praticar o desenvolvimento de abas, execução de mídias e layouts com XML e constraint layouts. O objeto é promover o aprendizado da lingua inglesa por meio de imagens e sons que representam um objeto. Ao clicar na imagem, é emitido o nome em ingles. 
+Neste projeto, foi possivel praticar o desenvolvimento de abas, execução de mídias e layouts com XML e constraint layouts. O objeto é promover o aprendizado da lingua inglesa por meio de imagens e sons que representam um objeto. Ao clicar na imagem, é emitido o nome em ingles. O projeto foi desenvolvido com java destinado a dispositivos com android nativo. Como IDE, foi utilizado o android studio.
 
 ## Capturas de Tela
 
